@@ -33,7 +33,7 @@ windows with `cv2.imshow`, so they won't run on a headless server). Two
 examples need a webcam.
 
 ```bash
-git clone https://github.com/<your-username>/opencv-computer-vision-examples.git
+git clone https://github.com/20armin04/opencv-computer-vision-examples.git
 cd opencv-computer-vision-examples
 
 python -m venv .venv
