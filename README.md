@@ -24,7 +24,7 @@ Each script does one thing, has a short docstring, and keeps its tunable values
 | [`07_perspective_transform`](examples/07_perspective_transform) | Warping to a top-down view | `warp_perspective`, `warp_with_mouse_clicks` |
 | [`08_contours_and_shapes`](examples/08_contours_and_shapes) | Contours and shape classification | `find_contours`, `shape_detection` |
 | [`09_object_detection`](examples/09_object_detection) | Haar cascades and counting objects | `face_detection_image`, `face_detection_webcam`, `coin_counting` |
-| [`10_projects`](examples/10_projects) | Small end-to-end projects | `document_scanner`, `license_plate_cascade`, `license_plate_contours`, `parking_position_finder`, `parking_space_counter` |
+| [`10_projects`](examples/10_projects) | Small end-to-end projects | `document_scanner`, `license_plate_cascade`, `license_plate_contours`, `parking_position_finder`, `parking_space_counter`, `make_parking_demo_gif` |
 
 ## Getting started
 
@@ -59,6 +59,8 @@ python examples/09_object_detection/coin_counting.py
 
 ### Parking space counter
 
+![Parking space counter: raw video (left) and detected free spots (right)](docs/parking_demo.gif)
+
 This project has two steps:
 
 1. Mark the parking spots on a still frame (left-click adds a spot, right-click
@@ -73,6 +75,12 @@ This project has two steps:
 
 A set of spots for the sample footage is already included.
 
+To regenerate the demo GIF above from your own footage:
+
+```bash
+python examples/10_projects/make_parking_demo_gif.py
+```
+
 ## Project structure
 
 ```
@@ -80,6 +88,7 @@ A set of spots for the sample footage is already included.
 ├── data/
 │   ├── images/
 │   └── videos/
+├── docs/
 ├── examples/
 │   ├── 01_basics/
 │   ├── 02_image_manipulation/
